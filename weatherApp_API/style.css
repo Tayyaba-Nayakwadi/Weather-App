@@ -1,0 +1,216 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+html{
+    background-image: url("weather_bimg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+   
+
+    width: 500px;
+    height: 500px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.144);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+.time_container{
+    
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 100px;
+  
+    margin: 20px;
+}
+.time_container #dateid{
+    margin-left: 250px;
+}
+.search_container{
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 300;
+   
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 90px;
+
+}
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: -internal-light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+    color: fieldtext !important;
+}
+.search_part{
+background-color: rgb(232, 240, 254);
+   border: 1px solid black;
+   padding: 8px;
+   border-radius: 20px;
+   width: 300px;
+   color: black;
+   
+
+}
+.search1 input::placeholder{
+    color: black;
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: transparent;
+
+
+}
+.search1 input{
+    width: 250px;
+    background:none;
+    color: black;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding-left: 7px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.search_part{
+    display: flex;
+}
+.search_part i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 0px;
+    justify-content: center;
+    color: black;
+    
+    
+}
+
+#weather1{
+    display: flex;
+    flex-direction: column;
+   
+}
+.weather_image{
+    height: 80px;
+    width: 90px;
+    
+    
+    
+    
+}
+.weather_temp{
+    color: black;
+    font-size: 3.5rem;
+    margin-bottom: 0%;
+    font-weight: 600;  
+
+}
+p{
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+  
+    
+}
+
+.weather_suntime{
+    width: 300px;
+    height: 200px;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0%;
+    
+    border-radius: 20px;
+    display: flex;
+    
+    justify-content: space-between;
+
+    
+}
+.weather_suntime::after{
+    border: 2px solid black;
+}
+#sunrise_sunset{
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: black;
+}
+.sunrise{
+    margin-bottom: 20px;
+}
+.weatherData{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 1rem;
+    font-weight: 500;
+   
+
+}
+.weather-item{
+    margin-left: 30px; 
+    text-align: left;   
+}
+
+/* ----------------for small screen ------------------------------*/
+@media only screen and (max-width: 600px){
+
+    .container{
+   
+
+        width: 400px;
+        height: 100vh;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.144);
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.144);
+        position: relative;
+        
+    }
+    .search_container{
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: 300;
+       
+        margin-top: 30px;
+        margin-right: 50px;
+        margin-left: 40px;
+    
+    }
+    .weatherData{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 1rem;
+        font-weight: 500;
+       
+    
+    }
+    .time_container #dateid{
+        margin-left: 170px;
+    }
+
+}
